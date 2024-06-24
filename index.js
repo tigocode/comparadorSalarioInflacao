@@ -124,6 +124,8 @@ if (opcao == 1) {
     console.log("Inflação IPCA:".padEnd(31, ".") + Number(ipca).toFixed(2).replace('.', ',') + "%");
   }
 } else if (opcao == 3) {
+
+  // Essa seção permite listar todos os itens contidos nas coleções de objetos "Salário minimo" e "Inflação" para calcular o percentual de crescimento do ano atual versus o atual
   for(let i = 0; i < salarioMinimo.length || i < inflacao.length; i++) {
     let ano = salarioMinimo[i].ano;
     let salario = salarioMinimo[i].salario;
